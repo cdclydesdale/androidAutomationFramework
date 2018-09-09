@@ -32,6 +32,7 @@ public class MobileTest {
 		AndroidDriver driver = new AndroidDriver(new URL("http://localhost:4723/wd/hub"),cap);
 		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 		driver.findElementByAccessibilityId("Preference").click();
+		//driver.findElementByAccessibilityId("OS").click();
 		//driver.findElement(By.xpath("//android.widget.TextView[@text='Preference']")).click();
 		driver.findElement(By.xpath("//android.widget.TextView[@text='3. Preference dependencies']")).click();
 		driver.findElement(By.id("android:id/checkbox")).click(); //resourceId
